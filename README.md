@@ -1,4 +1,3 @@
-
 # 🔐 Random Password Generator
 
 A simple and responsive Random Password Generator built with HTML, CSS, and Vanilla JavaScript.
@@ -7,7 +6,7 @@ The application generates two secure-looking random passwords with a single clic
 
 ## 📸 Screenshot
 
-![Random Password Generator](generate.png)
+![Random Password Generator](generate.PNG)
 
 ## 🚀 Features
 
@@ -42,7 +41,6 @@ Random-Password-Generator/
 ├── generate.png
 └── README.md
 
-
 ## ⚙️ How It Works
 
 When the user clicks the **Generate passwords** button, JavaScript randomly selects characters from a predefined character set.
@@ -53,7 +51,7 @@ The password generation logic is handled by a reusable function:
 
 javascript
 function generatePassword(length) {
-    let password = "";
+let password = "";
 
     for (let i = 0; i < length; i++) {
         const randomIndex = Math.floor(
@@ -64,34 +62,34 @@ function generatePassword(length) {
     }
 
     return password;
-}
 
+}
 
 ## 🎯 Purpose
 
 This project was created to practice:
 
-* JavaScript functions
-* Loops
-* Random number generation
-* DOM manipulation
-* Event listeners
-* String manipulation
-* Basic responsive web design
-* Clean and reusable code
+- JavaScript functions
+- Loops
+- Random number generation
+- DOM manipulation
+- Event listeners
+- String manipulation
+- Basic responsive web design
+- Clean and reusable code
 
 ## 🔮 Future Improvements
 
 Planned improvements include:
 
-* Copy password to clipboard
-* Custom password length
-* Uppercase/lowercase character options
-* Numbers and symbols options
-* Password strength indicator
-* Regenerate individual passwords
-* Improved accessibility
-* More advanced password generation
+- Copy password to clipboard
+- Custom password length
+- Uppercase/lowercase character options
+- Numbers and symbols options
+- Password strength indicator
+- Regenerate individual passwords
+- Improved accessibility
+- More advanced password generation
 
 ## 👨‍💻 Author
 
@@ -102,6 +100,3 @@ GitHub: [Code-with-Humza](https://github.com/Code-with-Humza)
 ## 📄 License
 
 This project is open source and available for learning and personal use.
-
-
-
