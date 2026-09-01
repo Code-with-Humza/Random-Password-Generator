@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Inter, Arial, sans-serif;
+
+    background-color: #cffcff;
+}
+
+/* Main Card */
+
+.container {
+    width: 550px;
+    height: 550px;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 100px 50px 50px;
+
+    background-color: #1f2937;
+
+    border: 4px solid white;
+    border-radius: 20px;
+}
+
+/* Heading Section */
+
+.text-container {
+    width: 100%;
+
+    color: white;
+
+    line-height: 1.25;
+}
+
+.text-container h1 {
+    margin: 0;
+
+    font-size: 36px;
+    letter-spacing: 1px;
+
+    text-shadow:
+        -2px 0 #242424,
+        0 2px #242424,
+        2px 0 #242424,
+        0 -2px #242424;
+}
+
+.random-password {
+    color: #55f9ce;
+}
+
+.paragraph-text {
+    margin-top: 12px;
+
+    color: rgba(242, 239, 239, 0.7);
+
+    font-size: 17px;
+    font-weight: normal;
+}
+
+/* Generate Button */
+
+.generate-btn {
+    align-self: flex-start;
+
+    margin-top: 40px;
+    padding: 13px 17px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #198447;
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 16px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    box-shadow:
+        2px 2px 2px rgba(0, 0, 0, 0.05),
+        -2px -2px 1px rgba(0, 0, 0, 0.05);
+
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.generate-btn:hover {
+    background-color: #29a960;
+    transform: scale(1.05);
+}
+
+.generate-btn:active {
+    transform: scale(0.98);
+}
+
+/* Password Section */
+
+.password-display {
+    width: 450px;
+
+    position: absolute;
+    bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 17px;
+
+    padding-top: 45px;
+
+    border-top: 2px solid rgba(96, 96, 96, 0.3);
+}
+
+/* Password Buttons */
+
+.password-output {
+    width: 100%;
+    height: 38px;
+
+    padding: 0 10px;
+
+    overflow: hidden;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #273542;
+    color: #72e9a5;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        transform 0.2s ease;
+}
+
+.password-output:hover {
+    background-color: #bbdecf;
+    color: #273542;
+
+    transform: translateY(-2px);
+}
+
+.password-output:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        height: 500px;
+
+        padding: 70px 30px 30px;
+    }
+
+    .text-container h1 {
+        font-size: 28px;
+    }
+
+    .paragraph-text {
+        font-size: 15px;
+    }
+
+    .password-display {
+        width: calc(100% - 60px);
+        bottom: 35px;
+    }
+
+    .password-output {
+        font-size: 12px;
+    }
+}
+
